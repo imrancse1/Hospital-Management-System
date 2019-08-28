@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bubt.MedScape">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital"
+        android:label="Medscape"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".ViewPresiptionActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PatientManage" />
+        <activity
+            android:name=".PatientAdd"
+            android:parentActivityName=".PatientManage" />
+        <activity
+            android:name=".ViewPatient"
+            android:parentActivityName=".PatientManage" />
+        <activity
+            android:name=".ReportGeneratedActivity"
+            android:parentActivityName=".PatientManage" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DoctorDetails" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

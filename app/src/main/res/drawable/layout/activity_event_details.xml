@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Activity.EventDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Travelling area:"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTravelDestinationDetailsTvId"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Travel Starting Date:"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTravelStartingDateDetailsTvId"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Travel Ending Date:"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTravelEndingDateDetailsTvId"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Travel Estimated Budget:"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showTravelEstimatedBudgetDetailsTvId"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayoutId">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

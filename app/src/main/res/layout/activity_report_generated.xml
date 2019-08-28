@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".ReportGeneratedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Patient Category"
+            android:textColor="#000"/>
+        <Spinner
+            android:id="@+id/expenseCategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date From"
+            android:textColor="#000"/>
+
+        <TextView
+            android:background="#fefffffe"
+            android:id="@+id/dateFromTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showFromDate"
+            android:text="Select Date"
+            android:textColor="#000"/>
+
+        <ImageButton
+            android:id="@+id/dateFromImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="showFromDate"
+            android:src="@drawable/ic_date_range_black_24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date To"
+            android:textColor="#000"/>
+        <TextView
+            android:background="#fefffffe"
+            android:id="@+id/dateToTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showToDate"
+            android:text="Select Date"
+            android:textColor="#000"/>
+        <ImageButton
+            android:id="@+id/dateToImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="showToDate"
+            android:src="@drawable/ic_date_range_black_24dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reportGenerateButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:onClick="generateReport"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Generate Report"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/emptyReportTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Patient to report"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/reportLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/nameReportTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="Name"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/categoryReportTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="Catagory"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/amountReportTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="Amount"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/dateReportTextView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="Date"
+                />
+        </LinearLayout>
+        <ListView
+            android:dividerHeight="2dp"
+            android:divider="#101010"
+            android:layout_marginTop="15dp"
+            android:id="@+id/expenseReportListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

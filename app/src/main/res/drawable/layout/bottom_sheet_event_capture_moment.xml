@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/travelCaptureMomentDetailsEtId"
+            android:layout_margin="5dp"
+            android:background="@drawable/gradient_edittext_background"
+            android:drawableLeft="@drawable/ic_description_white_24dp"
+            android:hint=" Enter your travel expenses details"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/heartwarming"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/travelCaptureMomentIvId"
+            android:layout_margin="10dp"
+            android:src="@drawable/add_event_capture_moment_image_icon"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveMomentBtnId"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:text="Save Moment"
+            android:textColor="@color/buttonTextColor"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#000000</color>
+    <color name="buttonTextColor">#ffffff</color>
+    <color name="tourMateTextColor">#000000</color>
+    <color name="backgroundEventColor">#ffbb00</color>
+    <color name="backgroundExpenseColor">#ffff09</color>
+    <color name="backgroundWeatherReportColor">#ff0ee3</color>
+    <color name="backgroundRestaurantColor">#395ff5</color>
+    <color name="backgroundBankColor">#44adf7</color>
+    <color name="backgroundHospitalColor">#11fd6c</color>
+    <color name="backgroundClothingStoreColor">#8400ff</color>
+    <color name="backgroundMosqueColor">#ff1010</color>
+    <color name="backgroundCafeColor">#ff7700</color>
+    <color name="backgroundBusStationColor">#f40367</color>
+</resources>

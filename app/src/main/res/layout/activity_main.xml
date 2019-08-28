@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.bubt.MedScape.MainActivity">
+
+    <ImageView
+        android:layout_width="331dp"
+        android:layout_height="80dp"
+        android:background="@drawable/oi" />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="192dp"
+        android:background="@drawable/logobubt"
+        />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="patient"
+        android:text="Patient Details"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doctors"
+        android:text="Doctor Details"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logOut"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:layout_gravity="bottom|center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+</LinearLayout>

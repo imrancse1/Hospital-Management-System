@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/profileProfileIvId"
+            android:src="@drawable/add_profile_image_icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/profileUserFirstNameEtId"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/gradient_edittext_background"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:hint=" Enter your first name"
+                android:inputType="textPersonName"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/profileUserLastNameEtId"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/gradient_edittext_background"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:hint=" Enter your last name"
+                android:inputType="textPersonName"
+                android:textSize="13sp"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/heartwarming"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/profileUserPhoneNumberEtId"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/gradient_edittext_background"
+            android:drawableLeft="@drawable/ic_phone_android_white_24dp"
+            android:hint=" Enter your phone number"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/heartwarming"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/profileUserOccupationEtId"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/gradient_edittext_background"
+            android:drawableLeft="@drawable/ic_people_white_24dp"
+            android:hint=" Enter your occupation"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/heartwarming"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/profileUserDateOfBirthEtId"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/gradient_edittext_background"
+            android:drawableLeft="@drawable/ic_cake_white_24dp"
+            android:hint=" Enter your date of birth"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/heartwarming"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/profileUserAddressEtId"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/gradient_edittext_background"
+            android:drawableLeft="@drawable/ic_location_city_white_24dp"
+            android:hint=" Enter your address"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/heartwarming"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileUserInfoSaveBtnId"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:text="Save"
+            android:textColor="@color/buttonTextColor"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

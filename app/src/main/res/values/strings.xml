@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HospitalManagementSystem</string>
+    <array name="expanseCatagory">
+        <item>All</item>
+        <item>Diabetes</item>
+        <item>Typhoid</item>
+        <item>Jaundice</item>
+        <item>Skin disease</item>
+        <item>Diarrhoea</item>
+        <item>Others</item>
+    </array>
+    <string name="title_activity_login">login</string>
+    <string name="upload_photo">Prescription </string>
+    <string name="upload">Upload</string>
+    <string name="welcome_screen_text">MedScape is your Health companion.You can add your Information every time after visiting Hospital or Clinic. Developed by Tanvir and Zubayer Designed by Imran and Supported by Arman Dept. of CSE, BUBT. Under supervision of Sohel Ahammed, Lecturer, Dept. of CSE BUBT </string>
+</resources>
